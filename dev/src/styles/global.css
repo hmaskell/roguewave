@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+@theme {
+  --font-sans: 'Figtree', sans-serif;
+}
+
+body {
+  background-color: #FFDC5A;
+  font-family: 'Figtree', sans-serif;
+  padding-top: 20%;
+  padding-left: 10%;
+  color: #464667;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.btn-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+     justify-content: space-between;
+     gap: 16px; 
+}
+
+.btn{
+    display: flex;
+}
