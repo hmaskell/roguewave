@@ -1,32 +1,51 @@
-@import "tailwindcss";
-
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
-
+@import "tailwindcss";
+ 
+/* ============================================================
+   BRAND COLOUR VARIABLES
+   Defined on :root so they're available everywhere on the site.
+   Usage: color: var(--color-vermillion);
+   ============================================================ */
+:root {
+  /* Warm reds and oranges */
+  --color-vermillion:    #FF581F;
+  --color-scarlet:       #FF1A00;
+ 
+  /* Yellows */
+  --color-buttercup:     #FFBE00;
+  --color-golden-rod:    #FFDC5A;
+  --color-creamed-honey: #FFEEBD;
+  --color-oatmilk:       #FFF6D9;
+ 
+  /* Purples and blues */
+  --color-melrose:       #C5C3FF;
+  --color-indigo:        #3C72C0;
+  --color-sapphire:      #093371;
+ 
+  /* Neutrals */
+  --color-dusk:          #464667;
+  --color-fog:           #D9D9D9;
+}
+ 
+/* ============================================================
+   TAILWIND
+   Must come after @import url() but before other rules.
+   ============================================================ */
+ 
+/* ============================================================
+   THEME
+   Tell Tailwind to use Figtree as the default sans font.
+   ============================================================ */
 @theme {
   --font-sans: 'Figtree', sans-serif;
 }
-
+ 
+/* ============================================================
+   BASE STYLES
+   Applied globally to every page.
+   ============================================================ */
 body {
-  background-color: #FFDC5A;
+  background-color: var(--color-creamed-honey);
   font-family: 'Figtree', sans-serif;
-  padding-top: 20%;
-  padding-left: 10%;
-  color: #464667;
-}
-
-h1{
-    font-size: 48px;
-    font-weight: bold;
-}
-
-.btn-section{
-    display: flex;
-    flex-direction: row;
-    align-items: center;  
-     justify-content: space-between;
-     gap: 16px; 
-}
-
-.btn{
-    display: flex;
+  color: var(--color-dusk);
 }
