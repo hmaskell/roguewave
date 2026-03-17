@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 // https://astro.build/config
 export default defineConfig({
 
-  site: 'https://hmaskell.github.io',
+  site: 'https://www.roguewave.design',
   vite: {
     plugins: [tailwindcss()]
   }
