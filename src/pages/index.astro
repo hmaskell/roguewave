@@ -28,22 +28,18 @@ const DESKTOP_URL =
       Replace G-XXXXXXXXXX with your Measurement ID from:
       Google Analytics → Admin → Data Streams → your stream
       ============================================================ -->
+        <!-- Google tag (gtag.js) -->
         <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-W0BC88Z8DR"
         ></script>
         <script>
-            declare global {
-                interface Window {
-                    dataLayer: unknown[];
-                    gtag: (...args: unknown[]) => void;
-                }
-            }
             window.dataLayer = window.dataLayer || [];
-            function gtag(...args: unknown[]) {
-                window.dataLayer.push(args);
+            function gtag() {
+                dataLayer.push(arguments);
             }
             gtag("js", new Date());
+
             gtag("config", "G-W0BC88Z8DR");
         </script>
     </head>
