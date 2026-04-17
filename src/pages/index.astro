@@ -8,238 +8,238 @@ import "../styles/global.css";
 
 // Figma prototype URLs — update these as your prototypes change
 const MOBILE_URL =
-	"https://www.figma.com/proto/1MmM6BhTuGAfDLtEHPbrF4/Rogue-Wave-Design?page-id=28%3A6651&node-id=28-6845&starting-point-node-id=28%3A6845&hide-ui=1&hotspot-hints=0&content-scaling=fixed&scaling=scale-down-width";
+    "https://www.figma.com/proto/1MmM6BhTuGAfDLtEHPbrF4/Rogue-Wave-Design?page-id=28%3A6651&node-id=28-6845&starting-point-node-id=28%3A6845&hide-ui=1&hotspot-hints=0&content-scaling=fixed&scaling=scale-down-width";
 const DESKTOP_URL =
-	"https://www.figma.com/proto/1MmM6BhTuGAfDLtEHPbrF4/Rogue-Wave-Design?page-id=28%3A6651&node-id=35-2228&starting-point-node-id=35%3A2228&hide-ui=1&hotspot-hints=0&content-scaling=responsive&scaling=contain";
+    "https://www.figma.com/proto/1MmM6BhTuGAfDLtEHPbrF4/Rogue-Wave-Design?page-id=28%3A6651&node-id=28-6652&viewport=106%2C673%2C0.22&t=ioGdFxbGTy4NEtUo-1&content-scaling=fixed&starting-point-node-id=28%3A6652&hide-ui=1&hotspot-hints=0&scaling=scale-down-width";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Rogue Wave Design</title>
-		<meta
-			name="description"
-			content="Rogue Wave Design — UX & product design portfolio"
-		/>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rogue Wave Design</title>
+        <meta
+            name="description"
+            content="Rogue Wave Design — UX & product design portfolio"
+        />
 
-		<!-- ============================================================
+        <!-- ============================================================
       GOOGLE ANALYTICS
       Replace G-XXXXXXXXXX with your Measurement ID from:
       Google Analytics → Admin → Data Streams → your stream
       ============================================================ -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=G-W0BC88Z8DR"
-		></script>
-		<script>
-			declare global {
-				interface Window {
-					dataLayer: unknown[];
-					gtag: (...args: unknown[]) => void;
-				}
-			}
-			window.dataLayer = window.dataLayer || [];
-			function gtag(...args: unknown[]) {
-				window.dataLayer.push(args);
-			}
-			gtag("js", new Date());
-			gtag("config", "G-W0BC88Z8DR");
-		</script>
-	</head>
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-W0BC88Z8DR"
+        ></script>
+        <script>
+            declare global {
+                interface Window {
+                    dataLayer: unknown[];
+                    gtag: (...args: unknown[]) => void;
+                }
+            }
+            window.dataLayer = window.dataLayer || [];
+            function gtag(...args: unknown[]) {
+                window.dataLayer.push(args);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-W0BC88Z8DR");
+        </script>
+    </head>
 
-	<body>
-		<!-- ============================================================
+    <body>
+        <!-- ============================================================
       HEADER
       Sticky top bar with logo icon + wordmark.
       ============================================================ -->
-		<header class="header">
-			<img
-				src="/logo-icon.png"
-				alt="Rogue Wave Design logo"
-				class="logo-icon"
-			/>
-			<span class="logo-text">Rogue Wave<br />Design</span>
-		</header>
+        <header class="header">
+            <img
+                src="/logo-icon.png"
+                alt="Rogue Wave Design logo"
+                class="logo-icon"
+            />
+            <span class="logo-text">Rogue Wave<br />Design</span>
+        </header>
 
-		<!-- ============================================================
+        <!-- ============================================================
       MAIN CONTENT
       Vertically and horizontally centered on the page.
       ============================================================ -->
-		<main class="main">
-			<!-- Headline block -->
-			<div class="headline-block">
-				<p class="welcome-text">Welcome, friend!</p>
-				<h1 class="headline">Select your device</h1>
-			</div>
+        <main class="main">
+            <!-- Headline block -->
+            <div class="headline-block">
+                <p class="welcome-text">Welcome, friend!</p>
+                <h1 class="headline">Select your device</h1>
+            </div>
 
-			<!-- ============================================================
+            <!-- ============================================================
         BUTTONS
         <a> tags used instead of <button> because they navigate
         to a new URL. target="_blank" opens in a new tab.
         ============================================================ -->
-			<div class="btn-group">
-				<a
-					href={MOBILE_URL}
-					target="_blank"
-					rel="noopener noreferrer"
-					class="btn btn-mobile"
-				>
-					Mobile
-				</a>
-				<a
-					href={DESKTOP_URL}
-					target="_blank"
-					rel="noopener noreferrer"
-					class="btn btn-desktop"
-				>
-					Desktop
-				</a>
-			</div>
+            <div class="btn-group">
+                <a
+                    href={MOBILE_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-mobile"
+                >
+                    Mobile
+                </a>
+                <a
+                    href={DESKTOP_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-desktop"
+                >
+                    Desktop
+                </a>
+            </div>
 
-			<!-- Disclaimer -->
-			<p class="disclaimer">
-				This site is in development.<br />
-				Please enjoy this prototype.
-			</p>
-		</main>
-	</body>
+            <!-- Disclaimer -->
+            <p class="disclaimer">
+                This site is in development.<br />
+                Please enjoy this prototype.
+            </p>
+        </main>
+    </body>
 </html>
 
 <style>
-	/* ── LAYOUT ─────────────────────────────────────────────── */
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-	}
+    /* ── LAYOUT ─────────────────────────────────────────────── */
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
 
-	body {
-		display: flex;
-		flex-direction: column;
-		background-color: var(--color-creamed-honey);
-	}
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-creamed-honey);
+    }
 
-	/* ── HEADER ─────────────────────────────────────────────── */
-	.header {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		gap: 12px;
-		padding: 12px 16px;
-		background-color: var(--color-creamed-honey);
-		border-bottom: 2px solid var(--color-golden-rod);
-		position: sticky;
-		top: 0;
-		z-index: 10;
-	}
+    /* ── HEADER ─────────────────────────────────────────────── */
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 16px;
+        background-color: var(--color-creamed-honey);
+        border-bottom: 2px solid var(--color-golden-rod);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
 
-	.logo-icon {
-		width: 48px;
-		height: 48px;
-		border-radius: 12px;
-	}
+    .logo-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+    }
 
-	.logo-text {
-		font-size: 16px;
-		font-weight: 700;
-		color: var(--color-sapphire);
-		line-height: 1.3;
-	}
+    .logo-text {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--color-sapphire);
+        line-height: 1.3;
+    }
 
-	/* ── MAIN ───────────────────────────────────────────────── */
-	.main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: 32px;
-		padding: 40px 24px;
-	}
+    /* ── MAIN ───────────────────────────────────────────────── */
+    .main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        padding: 40px 24px;
+    }
 
-	/* ── HEADLINE ───────────────────────────────────────────── */
-	.headline-block {
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-		gap: 4px;
-	}
+    /* ── HEADLINE ───────────────────────────────────────────── */
+    .headline-block {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
 
-	.welcome-text {
-		font-size: 16px;
-		font-weight: 400;
-		color: var(--color-dusk);
-		margin: 0;
-	}
+    .welcome-text {
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--color-dusk);
+        margin: 0;
+    }
 
-	.headline {
-		font-size: 36px;
-		font-weight: 700;
-		color: var(--color-scarlet);
-		margin: 0;
-	}
+    .headline {
+        font-size: 36px;
+        font-weight: 700;
+        color: var(--color-scarlet);
+        margin: 0;
+    }
 
-	/* ── BUTTONS ────────────────────────────────────────────── */
-	.btn-group {
-		display: flex;
-		flex-direction: row;
-		gap: 16px;
-	}
+    /* ── BUTTONS ────────────────────────────────────────────── */
+    .btn-group {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
 
-	.btn {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		padding: 12px 28px;
-		border-radius: 12px;
-		font-size: 16px;
-		font-weight: 600;
-		color: var(--color-sapphire);
-		text-decoration: underline;
-		cursor: pointer;
-		/* Transparent border by default — becomes visible on hover */
-		border: 2px solid transparent;
-		transition:
-			background-color 0.2s ease,
-			border-color 0.2s ease;
-	}
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 28px;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--color-sapphire);
+        text-decoration: underline;
+        cursor: pointer;
+        /* Transparent border by default — becomes visible on hover */
+        border: 2px solid transparent;
+        transition:
+            background-color 0.2s ease,
+            border-color 0.2s ease;
+    }
 
-	.btn-mobile {
-		background-color: var(--color-melrose);
-	}
+    .btn-mobile {
+        background-color: var(--color-melrose);
+    }
 
-	.btn-desktop {
-		background-color: var(--color-golden-rod);
-	}
+    .btn-desktop {
+        background-color: var(--color-golden-rod);
+    }
 
-	/* ── HOVER STATES ───────────────────────────────────────── 
+    /* ── HOVER STATES ─────────────────────────────────────────
      Both buttons lose their fill and gain a golden-rod border.
   ─────────────────────────────────────────────────────────── */
-	.btn-mobile:hover,
-	.btn-desktop:hover {
-		background-color: transparent;
-		border-color: var(--color-golden-rod);
-	}
+    .btn-mobile:hover,
+    .btn-desktop:hover {
+        background-color: transparent;
+        border-color: var(--color-golden-rod);
+    }
 
-	/* ── DISCLAIMER ─────────────────────────────────────────── */
-	.disclaimer {
-		font-size: 14px;
-		font-style: italic;
-		color: var(--color-dusk);
-		text-align: center;
-		line-height: 1.6;
-		margin: 0;
-	}
+    /* ── DISCLAIMER ─────────────────────────────────────────── */
+    .disclaimer {
+        font-size: 14px;
+        font-style: italic;
+        color: var(--color-dusk);
+        text-align: center;
+        line-height: 1.6;
+        margin: 0;
+    }
 
-	/* ── RESPONSIVE ─────────────────────────────────────────── */
-	@media (max-width: 480px) {
-		.headline {
-			font-size: 28px;
-		}
-		.logo-text {
-			font-size: 14px;
-		}
-	}
+    /* ── RESPONSIVE ─────────────────────────────────────────── */
+    @media (max-width: 480px) {
+        .headline {
+            font-size: 28px;
+        }
+        .logo-text {
+            font-size: 14px;
+        }
+    }
 </style>
